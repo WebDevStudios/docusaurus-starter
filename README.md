@@ -2,6 +2,8 @@
 
 A Docusaurus starter from WebDevStudios.
 
+<https://webdevstudios.github.io/docusaurus-starter/>
+
 [![WebDevStudios. Your Success is Our Mission.](https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png)](https://webdevstudios.com/contact/)
 
 ## Table of Contents <!-- omit in toc -->
