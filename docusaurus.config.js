@@ -6,7 +6,7 @@ module.exports = {
   title: 'Docusaurus',
   tagline: 'A Docusaurus starter from WebDevStudios',
   url: 'https://webdevstudios.com',
-  baseUrl: '/',
+  baseUrl: '/docusaurus-starter/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
