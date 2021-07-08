@@ -52,7 +52,7 @@ Learn more about [installing Docusaurus](https://docusaurus.io/docs/installation
 
 ## Configuration
 
-Please see the `docusaurus.config.js` file in the root of this project. Learn more about [configuring Docusaurus](https://docusaurus.io/docs/configuration).
+Please see the `docusaurus.config.js` file in the root of this project. Learn more about [setting up this config](https://docusaurus.io/docs/docusaurus.config.js).
 
 ```js
 // the basic shape of docusaurus.config.js
@@ -60,7 +60,7 @@ module.exports = {
   title: 'Docusaurus',
   tagline: 'A Docusaurus starter from WebDevStudios',
   url: 'https://webdevstudios.com',
-  baseUrl: '/',
+  baseUrl: '/docusaurus-starter/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
