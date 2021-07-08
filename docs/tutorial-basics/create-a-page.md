@@ -4,40 +4,54 @@ sidebar_position: 1
 
 # Create a Page
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+Add **Markdown or React** files to `src/pages` to create a **pages**.
 
-- `src/pages/index.js` -> `localhost:3000/`
-- `src/pages/foo.md` -> `localhost:3000/foo`
-- `src/pages/foo/bar.js` -> `localhost:3000/foo/bar`
+## Routes
 
-## Create your first React Page
+The file name creates a route:
 
-Create a file at `src/pages/my-react-page.js`:
+```text
+src/pages/index.js -> docusaurus.io/
+src/pages/foo.md -> docusaurus.io/foo
+src/pages/foo/bar.js-> docusaurus.io/foo/bar
+```
 
-```jsx title="src/pages/my-react-page.js"
+## React-based Page
+
+Create a file at `src/pages/react-page.js`:
+
+```jsx title="src/pages/react-page.js"
 import React from 'react'
 import Layout from '@theme/Layout'
 
-export default function MyReactPage() {
+export default function ReactPage() {
   return (
     <Layout>
-      <h1>My React page</h1>
+      <h1>React page</h1>
       <p>This is a React page</p>
     </Layout>
   )
 }
 ```
 
-A new page is now available at `http://localhost:3000/my-react-page`.
+This page is now available at `http://docusaurus.io/react-page`.
 
-## Create your first Markdown Page
+---
 
-Create a file at `src/pages/my-markdown-page.md`:
+## Markdown-based Page
 
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
+Create a file at `src/pages/markdown-page.md`:
 
-This is a Markdown page
+```mdx title="src/pages/markdown-page.md"
+---
+title: Markdown page
+---
+
+# Markdown page
+
+This is a Markdown page.
 ```
 
-A new page is now available at `http://localhost:3000/my-markdown-page`.
+This page is now available at `http://docusaurus.io/markdown-page`.
+
+Learn more about [Front Matter](/docs/tutorial-basics/markdown-features#front-matter) or see an example [Markdown-based standalone page](/markdown-page).

@@ -14,9 +14,9 @@ module.exports = {
   projectName: 'docusaurus-starter',
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Docusaurus',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Docusaurus Logo',
         src: 'img/logo.svg'
       },
       items: [
@@ -24,9 +24,8 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial'
+          label: 'Docs'
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/WebDevStudios/docusaurus-starter',
           label: 'GitHub',
@@ -41,8 +40,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'View Docs',
               to: '/docs/intro'
+            },
+            {
+              label: 'Markdown Page',
+              to: '/markdown-page'
             }
           ]
         },
@@ -83,13 +86,8 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/'
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/'
+            'https://github.com/WebDevStudios/docusaurus-starter/blob/main/'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
