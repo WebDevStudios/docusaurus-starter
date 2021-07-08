@@ -1,0 +1,8 @@
+.docusaurus/
+build/
+node_modules/
+public/
+.*cache
+*.min.js
+!/.*.js
+PULL_REQUEST_TEMPLATE.md

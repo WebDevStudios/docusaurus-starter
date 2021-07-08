@@ -1,0 +1,7 @@
+.docusaurus/
+build/
+node_modules/
+public/
+.*cache
+*.min.js
+!/.*.js
