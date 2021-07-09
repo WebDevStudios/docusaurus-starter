@@ -37,7 +37,7 @@ jobs:
       - name: Setup Git
         env:
           USE_SSH: true
-          GIT_USER: git
+          GIT_USER: gregrickaby
         run: |
           git config --global user.email "greg@webdevstudios.com"
           git config --global user.name "gregrickaby"
