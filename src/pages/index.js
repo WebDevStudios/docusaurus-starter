@@ -6,6 +6,12 @@ import React from 'react'
 import HomepageFeatures from '../components/HomepageFeatures'
 import styles from './index.module.css'
 
+/**
+ * Render the homepage header.
+ *
+ * @author WebDevStudios
+ * @return {Element} The homepage header component.
+ */
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext()
   return (
@@ -26,6 +32,12 @@ function HomepageHeader() {
   )
 }
 
+/**
+ * Render the homepage.
+ *
+ * @author WebDevStudios
+ * @return {Element} The homepage component.
+ */
 export default function Home() {
   const {siteConfig} = useDocusaurusContext()
   return (

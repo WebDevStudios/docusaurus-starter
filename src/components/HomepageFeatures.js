@@ -36,6 +36,16 @@ const FeatureList = [
   }
 ]
 
+/**
+ * Render the feature component.
+ *
+ * @author WebDevStudios
+ * @param  {object}  props             The component attributes as props.
+ * @param  {Element} props.Svg         The SVG element.
+ * @param  {string}  props.title       The title.
+ * @param  {string}  props.description The description.
+ * @return {Element}                   The Feature component.
+ */
 function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
@@ -56,6 +66,12 @@ Feature.propTypes = {
   description: PropTypes.string
 }
 
+/**
+ * Render the HomepageFeatures component.
+ *
+ * @author WebDevStudios
+ * @return {Element} The HomepageFeatures component.
+ */
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
