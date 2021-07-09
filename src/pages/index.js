@@ -7,10 +7,10 @@ import HomepageFeatures from '../components/HomepageFeatures'
 import styles from './index.module.css'
 
 /**
- * Render the homepage header.
+ * Render the HomepageHeader component.
  *
  * @author WebDevStudios
- * @return {Element} The homepage header component.
+ * @return {Element} The HomepageHeader component.
  */
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext()
@@ -33,10 +33,10 @@ function HomepageHeader() {
 }
 
 /**
- * Render the homepage.
+ * Render the Homepage.
  *
  * @author WebDevStudios
- * @return {Element} The homepage component.
+ * @return {Element} The Home component.
  */
 export default function Home() {
   const {siteConfig} = useDocusaurusContext()
