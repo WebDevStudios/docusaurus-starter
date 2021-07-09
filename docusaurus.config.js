@@ -5,13 +5,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 module.exports = {
   title: 'Docusaurus',
   tagline: 'A Docusaurus starter from WebDevStudios',
-  url: 'https://webdevstudios.com',
+  url: 'https://webdevstudios.github.io',
   baseUrl: '/docusaurus-starter/',
+  organizationName: 'webdevstudios',
+  projectName: 'docusaurus-starter',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'webdevstudios',
-  projectName: 'docusaurus-starter',
   themeConfig: {
     navbar: {
       title: 'Docusaurus',
