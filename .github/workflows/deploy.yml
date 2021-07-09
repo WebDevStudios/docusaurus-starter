@@ -1,0 +1,56 @@
+name: Deploy to Github Pages
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ github.token }}
+
+      - name: Setup SSH agent
+        uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+
+      - name: Setup Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Use NPM 7
+        run: npm i -g npm@latest
+
+      - name: Setup Git
+        env:
+          USE_SSH: true
+          GIT_USER: git
+        run: |
+          git config --global user.email "greg@webdevstudios.com"
+          git config --global user.name "gregrickaby"
+
+      - name: Cache Node dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.OS }}-node-
+
+      - name: Build
+        run: npm ci --legacy-peer-deps
+
+      - name: Deploy
+        run: npm run deploy
