@@ -3,8 +3,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Docusaurus',
-  tagline: 'A Docusaurus starter from WebDevStudios',
+  title: 'Client Website Documentation',
+  tagline: 'Documentation for your brand new website from WebDevStudios',
   url: 'https://webdevstudios.github.io',
   baseUrl: '/docusaurus-starter/',
   organizationName: 'webdevstudios',
@@ -15,65 +15,28 @@ module.exports = {
   favicon: 'img/favicon.ico',
   themeConfig: {
     navbar: {
-      title: 'Docusaurus',
-      logo: {
-        alt: 'Docusaurus Logo',
-        src: 'img/logo.svg'
-      },
       items: [
         {
+          href: '/',
+          label: 'Home',
+          position: 'left'
+        },
+        {
           type: 'doc',
-          docId: 'intro',
+          docId: 'index',
           position: 'left',
-          label: 'Docs'
+          label: 'Documentation'
         },
         {
           href: 'https://github.com/WebDevStudios/docusaurus-starter',
-          label: 'GitHub',
+          label: 'Project GitHub',
           position: 'right'
         }
       ]
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'View Docs',
-              to: '/docs/intro'
-            },
-            {
-              label: 'Markdown Page',
-              to: '/markdown-page'
-            }
-          ]
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Github',
-              href: 'https://github.com/webdevstudios'
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/webdevstudios'
-            }
-          ]
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'WebDevStudios',
-              href: 'https://webdevstudios.com/'
-            }
-          ]
-        }
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} WebDevStudios. Built with Docusaurus.`
+      copyright: `Copyright © ${new Date().getFullYear()} - WD3, LLC`
     },
     prism: {
       theme: lightCodeTheme,
@@ -86,7 +49,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://github.com/WebDevStudios/docusaurus-starter/blob/main/'
         },
