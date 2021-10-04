@@ -46,7 +46,7 @@
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
-    "@arkweid/lefthook": "^0.7.6",
+    "@arkweid/lefthook": "^0.7.7",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
