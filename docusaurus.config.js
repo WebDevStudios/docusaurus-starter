@@ -15,6 +15,10 @@ module.exports = {
   favicon: 'img/favicon.ico',
   themeConfig: {
     navbar: {
+      logo: {
+        alt: 'WebDevStudios Logo',
+        src: 'img/wds-logo-60x60.webp'
+      },
       items: [
         {
           href: '/',
