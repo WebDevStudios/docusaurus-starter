@@ -6,7 +6,7 @@ title: Homepage
 
 Congratulations on your new website! Our engineering team has written extensive documentation to help you navigate all the features.
 
-<a href="/docs/index" className="button">Website Documentation</a>
+<a href="/docs" className="button">Website Documentation</a>
 
 ---
 
