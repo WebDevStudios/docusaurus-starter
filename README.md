@@ -31,8 +31,8 @@ At WebDevStudios we love to write documentation! We also love standards, linting
 
 ### Prerequisites
 
-- Node 14
-- NPM 7
+- Node 14+
+- NPM 7+
 
 ### Install
 
