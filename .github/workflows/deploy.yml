@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Use NPM 7
+      - name: Update NPM
         run: npm i -g npm@latest
 
       - name: Setup Git
@@ -47,7 +47,7 @@ jobs:
           restore-keys: ${{ runner.OS }}-node-
 
       - name: Build
-        run: npm ci --legacy-peer-deps
+        run: npm i --legacy-peer-deps
 
       - name: Deploy
         env:

@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Use NPM 7
+      - name: Update NPM
         run: npm i -g npm@latest
 
       - name: Cache dependencies
@@ -38,7 +38,7 @@ jobs:
             ${{ runner.OS }}-
 
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+        run: npm i --legacy-peer-deps
 
       - name: Lint scripts
         run: npx eslint '**/*.{js,ts,jsx,tsx}'
